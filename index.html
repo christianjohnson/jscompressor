@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="JS Compressor : A (Beta) JS compressor made easy" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>JS Compressor</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/christianjohnson/jscompressor">View on GitHub</a>
+
+          <h1 id="project_title">JS Compressor</h1>
+          <h2 id="project_tagline">A (Beta) JS compressor made easy</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/christianjohnson/jscompressor/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/christianjohnson/jscompressor/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>An easy to use (Beta) JS Compressor.</h3>
+
+<p>This simple, easy to use (Beta) JS compressor is as easy as passing in a few parameters:</p>
+
+<pre><code>http://jscompressor.appspot.com/compress?code_url=http://rpidirectory.appspot.com/js/main.js
+http://jscompressor.appspot.com/compress?js_code=alert%28%22hello%22%29%3B%2F%2F+This+comment+should+be+stripped
+http://jscompressor.appspot.com/compress?js_code=var%20hi%20%3D%205%3B%0Aalert(hi)%3B&amp;compilation_level=ADVANCED_OPTIMIZATIONS
+</code></pre>
+
+<p>Params:</p>
+
+<ul>
+<li>
+<strong>code_url</strong>: url to the JS you want compressed. (optional)</li>
+<li>
+<strong>js_code</strong>:  actual JS code to be compressed (optional)</li>
+<li>
+<strong>cache_time</strong>: time to cache code in seconds (optional; default 24 hours)</li>
+<li>
+<strong>compilation_level</strong>: type of compression (optional; default: WHITESPACE_ONLY)
+
+<ul>
+<li>
+<em>WHITESPACE_ONLY</em>: Removes white space and comments.</li>
+<li>
+<em>SIMPLE_OPTIMIZATIONS</em>: Changes variable names and function names.</li>
+<li>
+<em>ADVANCED_OPTIMIZATIONS</em>: OMG awesome (use with caution - <a href="https://developers.google.com/closure/compiler/docs/api-tutorial3">may break code</a>).</li>
+</ul>
+</li>
+</ul><p>Compression is done with Google's <a href="https://developers.google.com/closure/compiler/">closure compiler</a>.  It caches your code for a default of 24 hours, so the subsequent requests will be extremely quick.  Use it for development to minimize your JS, or directly include the link in a HTML file:</p>
+
+<pre><code>&lt;HEAD&gt;
+&lt;script src="http://jscompressor.appspot.com/compress?code_url=http://rpidirectory.appspot.com/js/main.js"&gt;
+&lt;/HEAD&gt;
+</code></pre>
+
+<h3>Authors and Contributors</h3>
+
+<p>Christian Johnson (<a href="https://github.com/christianjohnson" class="user-mention">@christianjohnson</a>)</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">JS Compressor maintained by <a href="https://github.com/christianjohnson">christianjohnson</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-1292072-3");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+
+  </body>
+</html>
